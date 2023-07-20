@@ -1,0 +1,39 @@
+
+public class question2 {
+
+    public static void main(String[] args) {
+        // Labeled break statement
+        labeledBreakDemo();
+
+        // Unlabeled break statement
+        unlabeledBreakDemo();
+    }
+
+    public static void labeledBreakDemo() {
+        // Using a label to identify the loop
+        outerLoop: for (int x = 1; x <= 3; x++) {
+            for (int b = 1; b <= 3; b++) {
+                if (x == 2 && b == 2) {
+                    System.out.println("Labeled break: Loop terminated at x=" + x + ", b=" + b);
+                    // Using labeled break to terminate the outer loop when i=2 and j=2
+                    break outerLoop;
+                }
+                System.out.println("x=" + x + ", b=" + b);
+            }
+        }
+    }
+
+    public static void unlabeledBreakDemo() {
+        // Unlabeled break statement
+        for (int m = 1; m <= 3; m++) {
+            for (int n = 1; n <= 3; n++) {
+                if (m == 2 && n == 2) {
+                    System.out.println("Unlabeled break: Loop terminated at m=" + m + ", n=" + n);
+                    // Using unlabeled break to terminate the inner loop when i=2 and j=2
+                    break;
+                }
+                System.out.println("m=" + m + ", n=" + n);
+            }
+        }
+    }
+}
