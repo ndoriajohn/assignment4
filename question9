@@ -1,0 +1,14 @@
+public class question9{
+ public static void main(String[] args) {
+ int x = 20;
+ int y = 25;
+ int sum = 0;
+ int num = x;
+ do {
+ sum += num;
+ num++;
+ } while (num <= y);
+ System.out.println("The sum of numbers between " + x + " and " + y + " is: " +
+sum);
+ }
+}
