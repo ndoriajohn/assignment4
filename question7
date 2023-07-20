@@ -1,0 +1,13 @@
+public class question7 {
+    public static void main(String[] args) {
+        int x = 20;
+        int y = 25;
+        int sum = 0;
+
+        for (int i = x; i <= y; i++) {
+            sum += i;
+        }
+
+        System.out.println("The sum of numbers between " + x + " and " + y + " is: " + sum);
+    }
+}
