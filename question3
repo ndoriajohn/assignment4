@@ -1,0 +1,2 @@
+The flow of execution can diverge and go to a different section of the program thanks to branching statements.
+Some of the branching statements are;Continue,break and return.
